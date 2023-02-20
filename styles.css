@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --w: #ffffff;
+    --ow: #f8f8f8;
+    --lg: #ebebeb;
+    --g: #707070;
+    --dg: #717171;
+    --lb: #1792d2;
+    --db: #143774;  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+    font-style: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    color: var(--g);
+}
+
+/*****************  
+General Styling / Elements
+******************/
+
+
+
+/*****************  
+Images
+******************/
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
+/*****************  
+buttons / links / li
+******************/
+
+a,
+button{
+    font-family: inherit;
+}
+
+/*****************  
+Typography
+******************/
+
+.thin{
+    font-weight: 300;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.logo{
+    font-size: 2rem;
+    color: var(--db);
+    font-family: 'Lora', serif;
+}
+
+.logo-strapline{
+    color: var(--lb);
+}
+
+.header-nav-list-item{
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.header-nav-list-item:first-of-type{
+    border-bottom: 4px solid var(--db);
+}
+
+.header-nav-link{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--db);
+}
+
+.header-nav-link:hover{
+    color: var(--lb);
+}
+
+
+
+
+/*****************  
+Layout
+******************/
+
+.container{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    /* background-color: var(--lg); */
+    background-color: var(--lg);
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+}
+
+.header-container{
+    text-align: center;
+}
+
+.logo-container{
+    margin-bottom: 1rem;
+}
+
+
+/*****************  
+Media Queries
+******************/
+
+@media(min-width: 700px){
+
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .header-nav-list{
+        display: flex;
+    }
+
+    .logo-container{
+        margin-bottom: 0;
+    }
+
+}
+
+@media(min-width: 900px) and (min-height: 300px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
